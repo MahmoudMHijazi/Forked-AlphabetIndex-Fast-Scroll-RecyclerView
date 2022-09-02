@@ -442,6 +442,10 @@ public class IndexFastScrollRecyclerView extends RecyclerView {
         mScroller.setIndexBarHighLightTextVisibility(shown);
     }
 
+    public void setMaxSize(int position) {
+        mScroller.maxSectionSize = position;
+    }
+
     public void updateSections() {
         mScroller.updateSections();
     }
